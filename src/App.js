@@ -1,42 +1,48 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
-import Hero from './Pages/Hero';
-import Services from './Pages/Services';
 import About from './Pages/About';
-import Categories from './Components/Categoriessection';
 import Courses from './Pages/Courses';
-import Instructors from './Pages/Instructors';
 import Testimonial from './Pages/Testimonial';
 import Footer from './Components/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Pages/Home';
+import Ourteam from './Pages/Ourteam';
+import Contact from './Pages/Contact';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: false,
+      mirror: false,
+      offset: 120,
+    });
+
+    setTimeout(() => {
+      AOS.refreshHard();
+    }, 300);
+  }, []);
+
+
   return (
     <>
-      {/* <Header />
-      <Hero />
-      <Services />
-      <About />
-      <Categories />
-      <Courses />
-      <Instructors />
-      <Testimonial />
-      <Footer /> */}
-
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/categories" element={<Categories />} />
           <Route path="/courses" element={<Courses />} />
-          {/* <Route path="/instructors" element={<Instructors />} /> */}
+          <Route path="/ourteam" element={<Ourteam />} />
           <Route path="/testimonial" element={<Testimonial />} />
-          <Route path="/Conatct" element={<Footer />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );

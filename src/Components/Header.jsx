@@ -9,10 +9,14 @@ import "./Header.css";
 
 function Header() {
     return (
-        <Navbar expand="lg" className="navbar navbar-light bg-transparent">
+        <Navbar expand="lg" className="navbar navbar-light bg-transparent" data-aos="fade-down"
+            data-aos-duration="800"
+        >
             <Container fluid className="navbar-wrapper">
 
-                <Navbar.Brand href="#home" className="d-flex align-items-center ms-3">
+                <Navbar.Brand href="#home" className="d-flex align-items-center ms-3" data-aos="fade-right"
+                    data-aos-delay="200"
+                >
                     <i
                         className="fa-solid fa-book me-2"
                         style={{ color: "#06BBCC", fontSize: "32px" }}
@@ -25,7 +29,9 @@ function Header() {
                 <Navbar.Toggle aria-controls="navbar-nav" />
 
                 <Navbar.Collapse id="navbar-nav" className="collapse-center">
-                    <Nav className="ms-auto align-items-stretch me-3">
+                    <Nav className="ms-auto align-items-stretch me-3" data-aos="fade-left"
+                        data-aos-delay="300"
+                    >
                         <Nav.Link
                             as={NavLink}
                             to="/"
@@ -59,7 +65,7 @@ function Header() {
 
                         <Nav.Link
                             as={NavLink}
-                            to="/instructors"
+                            to="/ourteam"
                             className={({ isActive }) =>
                                 isActive ? "nav-link active" : "nav-link"
                             }
@@ -87,7 +93,9 @@ function Header() {
                             CONTACT
                         </Nav.Link>
                     </Nav>
-                    <Button className="btnjoinnow">
+                    <Button className="btnjoinnow" data-aos="zoom-in"
+                        data-aos-delay="400"
+                    >
                         Join Now<i className="fa-solid fa-arrow-right ps-2"></i>
                     </Button>
                 </Navbar.Collapse>

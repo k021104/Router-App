@@ -6,18 +6,19 @@ import aboutimg from '../assets/img/about.jpg';
 import Button from "react-bootstrap/Button";
 import Aboutsection from '../Components/Aboutsection';
 import Servicessection from '../Components/Servicessection';
-import Instructors from './Instructors';
+import Instructors from '../Components/Instructorssection';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { Link } from "react-router-dom";
 
-import './About.css';
+import './bannerstyle.css';
 
 
 export default function About() {
     return (
         <>
             <div className="page-banner">
-                <div className="banner-content">
+                <div className="banner-content" data-aos="zoom-in"
+                    data-aos-duration="800">
                     <h1>About Us</h1>
                     <Breadcrumb className="breadcrumb-center">
                         <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }} className="home-breadcrumb">

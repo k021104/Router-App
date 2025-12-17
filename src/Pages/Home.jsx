@@ -1,11 +1,11 @@
 import React from 'react'
-import Hero from './Hero'
+import Hero from '../Components/Herosection'
 import Aboutsection from '../Components/Aboutsection'
 import Servicessection from '../Components/Servicessection'
 import Categories from '../Components/Categoriessection'
-import Courses from './Courses'
-import Instructors from './Instructors'
-import Testimonial from './Testimonial'
+import Courses from '../Components/Coursessection'
+import Instructors from '../Components/Instructorssection'
+import Testimonial from '../Components/Testimonialsection'
 
 export default function Home() {
     return (

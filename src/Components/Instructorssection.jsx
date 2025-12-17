@@ -6,19 +6,26 @@ import team1 from '../assets/img/team-1.jpg';
 import team2 from '../assets/img/team-2.jpg';
 import team3 from '../assets/img/team-3.jpg';
 import team4 from '../assets/img/team-4.jpg';
-import './Instructors.css';
+import './Instructorssection.css';
 
 export default function Instructors() {
     return (
-        <Container className='my-5 py-4 courses'>
+        <Container className='my-5 py-4 courses' data-aos="fade-up"
+        >
             <Row className='mb-5'>
                 <Col className='text-center'>
-                    <h6 style={{ color: '#06BBCC', fontWeight: '700' }}>INSTRUCTORS</h6>
-                    <h1 className=''>Expert Instructors</h1>
+                    <h6 style={{ color: '#06BBCC', fontWeight: '700' }} data-aos="fade-up"
+                        data-aos-delay="700"
+                    >INSTRUCTORS</h6>
+                    <h1 className='' data-aos="fade-right"
+                        data-aos-delay="800"
+                    >Expert Instructors</h1>
                 </Col>
             </Row>
             <Row>
-                <Col lg={3} md={6} sm={12} xs={12} className='instructormain text-center position-relative py-lg-0 py-3'>
+                <Col lg={3} md={6} sm={12} xs={12} className='instructormain text-center position-relative py-lg-0 py-3' data-aos="fade-up"
+data-aos-delay="850"
+>
                     <div className='instructorimg'>
                         <img src={team1} alt='team1' className='img-fluid w-100'></img>
                     </div>
@@ -32,7 +39,9 @@ export default function Instructors() {
                         <small style={{ color: '#52565B' }}>Designation</small>
                     </div>
                 </Col>
-                <Col lg={3} md={6} sm={12} xs={12} className='instructormain text-center position-relative py-lg-0 py-3'>
+                <Col lg={3} md={6} sm={12} xs={12} className='instructormain text-center position-relative py-lg-0 py-3' data-aos="fade-up"
+data-aos-delay="900"
+>
                     <div className='instructorimg'>
                         <img src={team2} alt='team2' className='img-fluid w-100'></img>
                     </div>
@@ -46,7 +55,9 @@ export default function Instructors() {
                         <small style={{ color: '#52565B' }}>Designation</small>
                     </div>
                 </Col>
-                <Col lg={3} md={6} sm={12} xs={12} className='instructormain text-center position-relative py-lg-0 py-3'>
+                <Col lg={3} md={6} sm={12} xs={12} className='instructormain text-center position-relative py-lg-0 py-3' data-aos="fade-up"
+data-aos-delay="950"
+>
                     <div className='instructorimg'>
                         <img src={team3} alt='team3' className='img-fluid w-100'></img>
                     </div>
@@ -60,7 +71,9 @@ export default function Instructors() {
                         <small style={{ color: '#52565B' }}>Designation</small>
                     </div>
                 </Col>
-                <Col lg={3} md={6} sm={12} xs={12} className='instructormain text-center position-relative py-lg-0 py-3'>
+                <Col lg={3} md={6} sm={12} xs={12} className='instructormain text-center position-relative py-lg-0 py-3' data-aos="fade-up"
+data-aos-delay="1000"
+>
                     <div className='instructorimg'>
                         <img src={team4} alt='team4' className='img-fluid w-100'></img>
                     </div>
