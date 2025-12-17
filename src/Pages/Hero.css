@@ -1,0 +1,100 @@
+.hero-item {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(24, 29, 56, 0.75);
+  z-index: 1;
+}
+
+.hero-subtitle {
+  color: #06BBCC;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.text-primary-custom {
+  color: #06bbcc;
+}
+
+.btnhero {
+  min-height: 55px;
+  padding: 0 28px;
+  background-color: #06BBCC;
+  border: none;
+  border-radius: 0;
+  white-space: nowrap;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+}
+
+.btnhero:hover {
+  background-color: #2bc5d4;
+}
+
+/* MOBILE FIX */
+@media (max-width: 576px) {
+
+  .hero-item,
+  .hero-item img {
+    height: 85vh;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
+  .btnhero {
+    width: 100%;
+    min-height: 50px;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  right: 80px;
+  left: auto;
+  width: auto;
+  height: auto;
+  z-index: 3;
+}
+
+.carousel-control-prev {
+  top: 50%;
+  transform: translateY(-65%);
+}
+
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 45px;
+  height: 45px;
+  background-size: 100% 100%;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+  border: 2px solid gainsboro;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  opacity: 1;
+}
+

@@ -1,0 +1,29 @@
+.instructoricons i{
+    background-color: #06BBCC;
+    font-size: 20px;
+    padding: 7px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.instructoricons i:hover {
+    background-color: #2bc5d4;
+}
+
+.instructoricons {
+    background-color: #F0FBFC;
+}
+
+.instructorsdetails {
+    background-color: #F0FBFC;
+}
+
+.instructormain:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.instructorimg {
+    overflow: hidden;
+}

@@ -1,0 +1,42 @@
+.staricons i{
+    color: #06BBCC;
+}
+
+.courseimg-details {
+    background-color: #F0FBFC;
+    padding: 25px 0px 0px 0px;
+}
+
+.courseimg-details h3 {
+    font-weight: 700;
+}
+
+.courseimg-details h5 {
+    font-weight: 700;
+}
+
+.coursebuttons Button {
+    background-color: #06BBCC;
+    font-size: 14px;
+}
+
+.coursebuttons Button:hover {
+    background-color: #2bc5d4;
+}
+
+.coursebuttons .readmorebtn {
+    border-radius: 90px 0px 0px 90px;
+}
+
+.coursebuttons .joinnowbtn {
+    border-radius: 0px 90px 90px 0px;
+}
+
+.courseimg {
+    overflow: hidden;
+}
+
+.coursesmain:hover img {
+    transform: scale(1.2);
+    transition: all 0.4s ease-in-out;
+}

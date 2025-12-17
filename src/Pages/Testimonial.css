@@ -1,0 +1,96 @@
+.slick-slider {
+    padding: 40px 0;
+    overflow: visible;
+}
+
+.slick-slide {
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.slick-slide>div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-slide h3 {
+    /* width: 100%;
+  height: 220px; */
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.slick-center h3 {
+    transform: scale(1.05);
+}
+
+.testimonial .clientmessage {
+    background-color: #F0FBFC;
+    color: #6c757d;
+    transition: all 0.4s ease-out;
+}
+
+.slick-center .clientmessage {
+    transition: all 0.4s ease-in;
+    background-color: #06BBCC;
+    color: #fff;
+}
+
+/* Dots position */
+.slick-dots {
+    /* bottom: -20px; */
+}
+
+/* Hide default slick dot */
+.slick-dots li button:before {
+    display: none;
+}
+
+/* Dot container */
+.slick-dots li {
+    width: 14px;
+    height: 14px;
+    margin: 0 6px;
+}
+
+/* Dot button (IMPORTANT FIX) */
+.slick-dots li button {
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    display: block;
+    border: 2px solid #06BBCC;
+    background: transparent;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* Active dot */
+.slick-dots li.slick-active button {
+    background-color: #06BBCC;
+    border-color: #06BBCC;
+}
+
+@media (max-width: 768px) {
+    .slick-slide>div {
+        padding: 0 8px;
+    }
+
+    .testimonialcard {
+        padding: 20px;
+    }
+
+    .clientmessage {
+        padding: 15px;
+    }
+}
+

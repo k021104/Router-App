@@ -1,0 +1,73 @@
+.footer {
+  background-color: #181d38;
+  color: #fff;
+}
+
+.footer h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.quick-links li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.quick-links li:hover {
+  transform: translateX(5px);
+}
+
+.social-icons svg {
+  margin-right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.social-icons svg:hover {
+  color: #06BBCC;
+  background-color: #fff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.newsletter {
+  display: flex;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+  padding: 5px 15px;
+  border: none;
+  background-color: #06BBCC;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    margin-top: 10px;
+  }
+}

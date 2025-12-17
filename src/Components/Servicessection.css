@@ -1,0 +1,36 @@
+.service-card {
+    background-color: #F0FBFC;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card i {
+    color: #06BBCC;
+    font-size: 50px;
+}
+
+.service-card:hover i {
+    color: #fff;
+}
+
+.service-card h5 {
+    font-weight: 700;
+    color: #181d38;
+}
+
+.service-card:hover h5 {
+    color: #fff;
+}
+
+.service-card p {
+    color: #6c757d;
+}
+
+.service-card:hover p {
+    color: #fff;
+}
+
+.service-card:hover {
+    background-color: #06BBCC;
+    transform: translateY(-9px);
+}

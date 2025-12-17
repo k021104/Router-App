@@ -1,0 +1,57 @@
+.page-banner {
+    height: 300px;
+    background: url("../assets/img/carousel-1.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;       
+    justify-content: center;   
+    position: relative;
+}
+
+.page-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(24, 29, 56, 0.75);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;    
+    justify-content: center;  
+    height: 100%;            
+    text-align: center;     
+    color: #fff;
+}
+
+.banner-content h1 {
+    margin-bottom: 15px;
+}
+
+.breadcrumb-center {
+    background: transparent;
+}
+
+.breadcrumb-center .home-breadcrumb a {
+    text-decoration: none;
+    border-bottom: none;
+    color: #fff;
+}
+
+.breadcrumb-center .home-breadcrumb a:hover {
+    color: #06BBCC;
+    text-decoration: none;
+}
+
+.breadcrumb-center .breadcrumb-item a,
+.breadcrumb-center .breadcrumb-item.active {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.breadcrumb-center .breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+}
