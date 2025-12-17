@@ -25,7 +25,7 @@ export default function Testimonial() {
             {
                 breakpoint: 992, // tablet
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: true,
                 },
